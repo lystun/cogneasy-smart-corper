@@ -20,9 +20,8 @@
 </script>
 
 <style lang="scss">
-    // @font-face {
-    //     font-family: "CircularStd";
-    //     src: local("CircularStd"), url("./fonts/Circular-Std.otf");
-    // }
+    div {
+        font-family: 'DM Sans', sans-serif;
+    }
 
 </style>

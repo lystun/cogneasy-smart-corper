@@ -97,10 +97,11 @@
                     <div class="col-12 text-center mb-6">
                         <h3 class="text-white">- Speaker's Profile -</h3>
                     </div>
-                    <div class="col-md-4 home__speaker--img text-center">
+                    <!-- <div class="col-md-4 home__speaker--img text-center">
                         <img src="./../assets/images/speaker-jd.png" class="img-flui" alt="">
-                    </div>
-                    <div class="col-md-8 home__speaker--text">
+                    </div> -->
+                    <div class="col-md-12 mx-auto home__speaker--text">
+                        <img src="./../assets/images/speaker-jd.png" class="" alt="">
                         <p class="lead text-white lh-180">
                             Jesudamilare "JD" Adesegun-David is a co-founder of Ennovate Lab, a social enterprise promoting a Communities-as-Innovation-Hubs approach to positioning Africa for relevance in a global digital and knowledge economy. 
                         </p>
@@ -267,8 +268,10 @@
                             <div class="form-group">
                                 <label class="form-control-label">How did you hear about Us?</label>
                                 <select class="form-control" required  v-model="form.how">
-                                    <option value="1">Online</option>
-                                    <option value="1">Googlr</option>
+                                    <option value="WhatsApp">WhatsApp</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Referrals">Referrals</option>
                                 </select>
                             </div>
                         </div>
@@ -297,14 +300,12 @@
 
 <script>
 
-    import db from '@/firebase/init'
+    import db from '@/firebase/init';
     
     export default {
         data(){
             return {
-
                 loading : false,
-
                 form : {
                     fname: '',
                     lname: '',
@@ -313,53 +314,47 @@
                     location: '',
                     how: '',
                     expectation: '',
-                }
+                },
+            }
+        },
+
+        computed: {
+            reference() {
+                let text = "";
+                let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+                for (let i = 0; i < 10; i++)
+                    text += possible.charAt(Math.floor(Math.random() * possible.length));
+                return text;
             }
         },
 
         created(){
-            // this.readUsers()
+            // this.goToPayment()
         },
 
         methods  : {
-
-            readUsers(){
-
-                let usersData = [];
-
-                db.collection('users')
-                    .get()
-                    .then((sh) => {
-
-                        sh.forEach((doc) => {
-
-                            usersData.push({
-                                id: doc.id,
-                                name: doc.data().name,
-                                date: doc.data().date,
-                            });
-
-                            console.log(doc.id, " => ", doc.data());
-                        });
-
-                        return usersData
-                    })
-                    .catch(err => {
-                        console.log(err);
-                    })
+        
+            goToPayment(){
+                this.$swal({
+                    title: '<strong>Proceed to Payment</strong>',
+                    icon: 'info',
+                    html: 'Proceed to make payment to complete your registration.',
+                    focusConfirm: false,
+                    // confirmButtonText: 'Pay Now',
+                    confirmButtonText: '<a href="https://paystack.com/pay/Cogneasy" target="blank" style="color: white;">Pay Now</a>',
+                    confirmButtonAriaLabel: 'Make payment now',
+                })
             },
 
             saveData(){
-
                 this.loading = true
 
-                console.log(this.form);
-
                 db.collection('users').add(
-                        this.form    
-                    ).then(res => {
+                        this.form
+                    ).then(() => {
                         this.loading = false
-                        console.log(res);
+                        this.goToPayment()
                     }).catch(err => {
                         this.loading = false
                         console.log(err);
@@ -374,9 +369,9 @@
 <style lang="scss" scoped>
 
     @import "./../../public/scss/_colors.scss";
-
+    
     .home{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'DM Sans', sans-serif;
 
         &__about {
             background: $secondary;
@@ -411,6 +406,15 @@
             &--img {
                 img {
                     width: 70%;
+                }
+            }
+
+            &--text {
+                img {
+                    width: 200px;
+                    float: left;
+                    margin-right: 1rem;
+                    shape-outside: circle(); 
                 }
             }
         }

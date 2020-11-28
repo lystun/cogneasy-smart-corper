@@ -4,6 +4,14 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
+const options = {
+    confirmButtonColor: '#1a1a54',
+    cancelButtonColor: '#ff7674',
+};
+  
+Vue.use(VueSweetalert2, options);
 
 
 new Vue({
