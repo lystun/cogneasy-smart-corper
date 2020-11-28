@@ -40,8 +40,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card hover-shadow-lg">
-                                    <div class="px-4 py-5">
-                                        <img alt="" src="/" class="svg-inject" style="height: 64px; width: auto;">
+                                    <div class="px-4 py-3">
+                                        <img alt="Creative Thinking" src="./../assets/images/creative_thinking.png" class="svg-inject">
                                     </div>
                                     <div class="px-4 pb-5">
                                         <h5>Creative Thinking Skills</h5>
@@ -49,8 +49,8 @@
                                     </div>
                                 </div>
                                 <div class="card hover-shadow-lg">
-                                    <div class="px-4 py-5">
-                                        <img alt="" src="/" class="svg-inject" style="height: 64px; width: auto;">
+                                    <div class="px-4 py-3">
+                                        <img alt="Critical Thinking" src="./../assets/images/critical_thinking.png" class="svg-inject">
                                     </div>
                                     <div class="px-4 pb-5">
                                         <h5>Critical Thinking Skills</h5>
@@ -60,8 +60,8 @@
                             </div>
                             <div class="col-md-6 pt-lg-6 pt-4">
                                 <div class="card hover-shadow-lg">
-                                    <div class="px-4 py-5">
-                                        <img alt="" src="/" class="svg-inject" style="height: 64px; width: auto;">
+                                    <div class="px-4 py-3">
+                                        <img alt="Problem Solving" src="./../assets/images/problem_solving.png" class="svg-inject">
                                     </div>
                                     <div class="px-4 pb-5">
                                         <h5>Complex-Problem Solving Skills</h5>
@@ -393,6 +393,14 @@
                 .btn {
                     color: $white;
                     background: $primary;
+                }
+            }
+
+            &--content {
+                .card {
+                    img {
+                        width: 100px;
+                    }
                 }
             }
         }
