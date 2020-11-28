@@ -9,9 +9,9 @@
                 <div class="">
                     <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                         <li class="nav-item mr-0">
-                            <router-link to="#register" class="btn btn-white rounded-pill d-lg-inline-flex">
+                            <a href="#register" class="btn btn-white rounded-pill d-lg-inline-flex">
                                 Register Now
-                            </router-link>
+                            </a>
                         </li>
                     </ul>
                 </div>

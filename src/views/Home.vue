@@ -1,7 +1,7 @@
 <template>
     <div class="home">
-        <section class="slice slice-lg pb-300 home__about">
-            <div class="container pt-6 pt-lg-9">
+        <section class="slice slice-lg pb-200 home__about">
+            <div class="container pt-4 pt-lg-9">
                 <div class="row">
                     <div class="col-lg-9 mx-aut">
                         <h1 class="display-4 text-white lh-110">Cogneasy is helping Africans unlock solutions to challenges.</h1>
@@ -31,9 +31,9 @@
                         <div class="py-lg-5 text-lg-left">
                             <h3 class="mb-3 font-weight-bold">Learning Outcome</h3>
                             <p class="lead lh-180">In this course, you will be equipped with 3 of the most highly sought-after skills in the 21st Century:</p>
-                            <router-link to="#register" class="btn rounded-pill hover-translate-y-n3 mt-4">
+                            <a href="#register" class="btn rounded-pill hover-translate-y-n3 mt-4">
                                 <span class="btn-inner--text">Register Now</span>
-                            </router-link>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-7 home__outcome--content ml-lg-auto">
@@ -124,13 +124,15 @@
         <!-- Testimonials -->
         <section class="slice slice-lg">
             <div class="container">
+                
                 <div class="row">
                     <div class="col-12 mb-5 text-center">
                         <h3>Testimonials</h3>
                         <p>Here are the testimonies of individuals who have undertook our course</p>
                     </div>
 
-                    <div class="col-md-4 mb-3">
+                    <div class="card-columns">
+
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
@@ -141,9 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 mb-3">
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
@@ -154,9 +154,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 mb-3">
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
@@ -167,9 +165,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 mb-3">
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
@@ -180,9 +176,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 mb-3">
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
@@ -193,9 +187,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 mb-3">
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
@@ -206,11 +198,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    
-
-                    <div class="col-md-4 mb-3">
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
@@ -221,16 +209,15 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
-
                     
-
                 </div>
             </div>
         </section>
 
         <!-- registration details -->
-        <section class="slice slice-lg delimiter-to home__details">
+        <section id="register" class="slice slice-lg delimiter-to bg-secondary home__details">
             <div class="container">
                 <div class="mb-5 text-center">
                     <h3>Registration Details</h3>
