@@ -3,7 +3,7 @@
         <nav class="navbar navbar-main navbar-expand-sm navbar-transparent navbar-dark bg-dark" id="navbar-main">
             <div class="container px-lg-0">
                 <router-link class="navbar-brand mr-lg-5" to="/">
-                    <img alt="Cogneasy Logo" src="@/assets/logo.png" id="navbar-logo" style="height: 40px;">
+                    <img alt="Cogneasy Logo" src="@/assets/logo.png" id="navbar-logo">
                 </router-link>
               
                 <div class="">
@@ -15,17 +15,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- <div class="collapse navbar-collapse" id="navbar-main-collapse">
-                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                        <li class="nav-item mr-0">
-                            <router-link to="#register" class="btn btn-white rounded-pill d-lg-inline-flex">
-                                Register Here
-                            </router-link>
-                        </li>
-                    </ul>
-                </div> -->
-            
             </div>
         </nav>
         
@@ -42,10 +31,26 @@
     @import "./../../../public/scss/_colors.scss";
 
     .header {
+        .navbar-brand img {
+            height: 40px;
+        }
+
         .btn {
             color: $white;
             background: $primary;
             border: none
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .header {
+            .navbar-brand img {
+                height: 30px;
+            }
+
+            .btn {
+               padding: .5rem 1rem; 
+            }
         }
     }
 </style>

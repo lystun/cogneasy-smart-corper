@@ -10,8 +10,7 @@
                         </p>
                         <p class="lead text-white">With these skills, Cogneasy wants to help transform and prepare Africans for the future of work which is already upon us.</p>
                         <div class="mt-5">
-                            <a href="#" class="btn btn-lg btn-icon rounded-pill hover-translate-y-n3">
-                                <span class="btn-inner--icon"><i class="fas fa-book"></i></span>
+                            <a href="./cogneasy_brochure.pdf" class="btn btn-icon rounded-pill hover-translate-y-n3" download>
                                 <span class="btn-inner--text">Download Brochure</span>
                             </a>
                         </div>
@@ -44,7 +43,7 @@
                                         <img alt="Creative Thinking" src="./../assets/images/creative_thinking.png" class="svg-inject">
                                     </div>
                                     <div class="px-4 pb-5">
-                                        <h5>Creative Thinking Skills</h5>
+                                        <h5>Creative Thinking</h5>
                                         <p class="text-muted">In this module, you will learn frameworks and principles that will challenge you to generate new ideas or build on existing ones to solve problems</p>
                                     </div>
                                 </div>
@@ -53,7 +52,7 @@
                                         <img alt="Critical Thinking" src="./../assets/images/critical_thinking.png" class="svg-inject">
                                     </div>
                                     <div class="px-4 pb-5">
-                                        <h5>Critical Thinking Skills</h5>
+                                        <h5>Critical Thinking</h5>
                                         <p class="text-muted">In this module you will be exposed to techniques that will help you analyze and understand the logical connections between your ideas so as to foster novel solutions.</p>
                                     </div>
                                 </div>
@@ -64,7 +63,7 @@
                                         <img alt="Problem Solving" src="./../assets/images/problem_solving.png" class="svg-inject">
                                     </div>
                                     <div class="px-4 pb-5">
-                                        <h5>Complex-Problem Solving Skills</h5>
+                                        <h5>Complex-Problem Solving</h5>
                                         <p class="text-muted">Having learned Creative Thinking and Critical Thinking Skills, you will be able to build capacities that are used in solving real and complex problems in addition to frameworks that can further foster these capacities.</p>
                                     </div>
                                 </div>
@@ -89,12 +88,12 @@
             <!-- SVG background -->
             <div class="bg-absolute-cover bg-size--contain d-flex align-items-center">
                 <figure class="w-100">
-                    <img alt="Image placeholder" src="./../assets/images/svg/bg-new.svg" class="svg-inject">
+                    <img alt="Image placeholder" src="./../assets/images/svg/bg-new.svg" class="svg-inject d-none d-lg-block">
                 </figure>
             </div>
             <div class="container position-relative zindex-100">
                 <div class="row">
-                    <div class="col-12 text-center mb-6">
+                    <div class="col-12 text-center mb-4 mb-md-6">
                         <h3 class="text-white">- Speaker's Profile -</h3>
                     </div>
                     <!-- <div class="col-md-4 home__speaker--img text-center">
@@ -102,6 +101,7 @@
                     </div> -->
                     <div class="col-md-12 mx-auto home__speaker--text">
                         <img src="./../assets/images/speaker-jd.png" class="" alt="">
+
                         <p class="lead text-white lh-180">
                             Jesudamilare "JD" Adesegun-David is a co-founder of Ennovate Lab, a social enterprise promoting a Communities-as-Innovation-Hubs approach to positioning Africa for relevance in a global digital and knowledge economy. 
                         </p>
@@ -133,7 +133,6 @@
                     </div>
 
                     <div class="card-columns">
-
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
@@ -148,10 +147,10 @@
                         <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
-                                    Through the cognitive skills training, I’ve been able to organize my daily tasks and follow it dutifully
+                                    Through the cognitive skills training, I’ve been able to organize my daily tasks and follow it dutifully.
                                 </p>
                                 <div class="">
-                                    <h5 class="h6 mb-0">Adebayo Adesegun-David.</h5>
+                                    <h5 class="h6 mb-0">Adebayo Komolafe.</h5>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +161,7 @@
                                     With this training, I’ve been able to articulate my thoughts more easily than ever with an increased energy for research and keen observation.
                                 </p>
                                 <div class="">
-                                    <h5 class="h6 mb-0">- Oyetooke Ajao</h5>
+                                    <h5 class="h6 mb-0">Oyetooke Ajao</h5>
                                 </div>
                             </div>
                         </div>
@@ -318,23 +317,12 @@
             }
         },
 
-        computed: {
-            reference() {
-                let text = "";
-                let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-                for (let i = 0; i < 10; i++)
-                    text += possible.charAt(Math.floor(Math.random() * possible.length));
-                return text;
-            }
-        },
-
+        
         created(){
-            // this.goToPayment()
+
         },
 
         methods  : {
-        
             goToPayment(){
                 this.$swal({
                     title: '<strong>Proceed to Payment</strong>',
@@ -403,12 +391,6 @@
         &__speaker {
             background: $primary;
 
-            &--img {
-                img {
-                    width: 70%;
-                }
-            }
-
             &--text {
                 img {
                     width: 200px;
@@ -429,6 +411,27 @@
                 &:focus {
                     box-shadow: none;
                     border: 1px solid $secondary;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .home {
+            &__speaker {
+
+                &--text {
+                    text-align: center;
+
+                    p {
+                        text-align: left;
+                    }
+
+                    img {
+                        width: 150px;
+                        float: none;
+                        margin-bottom: 1rem;
+                    }
                 }
             }
         }
