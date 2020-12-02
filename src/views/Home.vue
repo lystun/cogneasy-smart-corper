@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <section class="slice slice-lg pb-200 home__about">
+        <section class="slice slice-lg pb-5 pb-lg-10 home__about">
             <div class="container pt-4 pt-lg-9">
                 <div class="row">
                     <div class="col-lg-9 mx-aut">
@@ -15,6 +15,13 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="col-lg-3 home__about--price">
+                        <img src="./../assets/images/price.png" alt="">
+                        <!-- <span class="old">N50,000</span>
+                        <span class="new">N15,000</span> -->
+                    </div>
+
                 </div>
             </div>
             <div class="shape-container d-none d-xl-block" data-shape-position="bottom">
@@ -44,7 +51,7 @@
                                     </div>
                                     <div class="px-4 pb-5">
                                         <h5>Creative Thinking</h5>
-                                        <p class="text-muted">In this module, you will learn frameworks and principles that will challenge you to generate new ideas or build on existing ones to solve problems</p>
+                                        <p class="text-muted">In this module, you will learn frameworks and principles that will challenge you to generate new ideas or build on existing ones to solve problems.</p>
                                     </div>
                                 </div>
                                 <div class="card hover-shadow-lg">
@@ -319,7 +326,7 @@
 
         
         created(){
-
+            // this.goToPayment()
         },
 
         methods  : {
@@ -327,7 +334,8 @@
                 this.$swal({
                     title: '<strong>Proceed to Payment</strong>',
                     icon: 'info',
-                    html: 'Proceed to make payment to complete your registration.',
+                    // html: 'Proceed to make payment to complete your registration.',
+                    html: 'You will have to pay an amount of <del>₦50,000</del> <b>₦15,500 </b> to complete registration.',
                     focusConfirm: false,
                     // confirmButtonText: 'Pay Now',
                     confirmButtonText: '<a href="https://paystack.com/pay/Cogneasy" target="blank" style="color: white;">Pay Now</a>',
@@ -368,6 +376,12 @@
                 color: $white;
                 background: $primary;
                 border: none
+            }
+
+            &--price {
+                img {
+                    width: 20rem;
+                }
             }
         }
 
@@ -418,6 +432,18 @@
 
     @media screen and (max-width: 600px) {
         .home {
+            &__about {
+                &--price {
+                    
+                    margin-top: 2rem;
+                    text-align: center;
+
+                    img {
+                        width: 10rem;
+                    }
+                }
+            }
+
             &__speaker {
 
                 &--text {
