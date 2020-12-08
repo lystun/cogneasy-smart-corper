@@ -13,6 +13,9 @@ const options = {
   
 Vue.use(VueSweetalert2, options);
 
+import JsonCSV from 'vue-json-csv' 
+Vue.component('downloadCsv', JsonCSV)
+
 
 new Vue({
   router,

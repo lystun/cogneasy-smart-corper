@@ -15,13 +15,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 home__about--price">
-                        <img src="./../assets/images/price.png" alt="">
-                        <!-- <span class="old">N50,000</span>
-                        <span class="new">N15,000</span> -->
-                    </div>
-
                 </div>
             </div>
             <div class="shape-container d-none d-xl-block" data-shape-position="bottom">
@@ -231,76 +224,86 @@
                     <p>Please fill in this form to register</p>
                 </div>
 
-                <form @submit.prevent="saveData">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-control-label">First name</label>
-                                <input class="form-control" required v-model="form.fname"  type="text" placeholder="Enter your first name">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-control-label">Last name</label>
-                                <input class="form-control" required v-model="form.lname" type="text" placeholder="Also your last name">
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-md-3 home__details--price">
+                        <img src="./../assets/images/price.png" class="img-fluid" alt="">
                     </div>
-            
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-control-label">Email</label>
-                                <input class="form-control" required v-model="form.email" type="email" placeholder="email@address.com">
+                    <div class="col-md-9 home__details--form">
+                        <form @submit.prevent="saveData">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">First name</label>
+                                        <input class="form-control" required v-model="form.fname"  type="text" placeholder="Enter your first name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Last name</label>
+                                        <input class="form-control" required v-model="form.lname" type="text" placeholder="Also your last name">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-control-label">Phone</label>
-                                <input class="form-control" required v-model="form.phone" type="text" placeholder="+234 000 123 4567">
+                    
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Email</label>
+                                        <input class="form-control" required v-model="form.email" type="email" placeholder="email@address.com">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Phone</label>
+                                        <input class="form-control" required v-model="form.phone" type="text" placeholder="+234 000 123 4567">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-control-label">Location</label>
-                                <input type="text" required v-model="form.location" class="form-control" placeholder="Enter your location">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Location</label>
+                                        <input type="text" required v-model="form.location" class="form-control" placeholder="Enter your location">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label">How did you hear about Us?</label>
+                                        <select class="form-control" required  v-model="form.how">
+                                            <option value="WhatsApp">WhatsApp</option>
+                                            <option value="Facebook">Facebook</option>
+                                            <option value="Instagram">Instagram</option>
+                                            <option value="Referrals">Referrals</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-control-label">How did you hear about Us?</label>
-                                <select class="form-control" required  v-model="form.how">
-                                    <option value="WhatsApp">WhatsApp</option>
-                                    <option value="Facebook">Facebook</option>
-                                    <option value="Instagram">Instagram</option>
-                                    <option value="Referrals">Referrals</option>
-                                </select>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label class="form-control-label">What Is Your Expectation For This Training?</label>
+                                    <textarea class="form-control" required v-model="form.expectation" placeholder="What Is Your Expectation For This Training?" rows="3" resize="none"></textarea>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <label class="form-control-label">What Is Your Expectation For This Training?</label>
-                            <textarea class="form-control" required v-model="form.expectation" placeholder="What Is Your Expectation For This Training?" rows="3" resize="none"></textarea>
-                        </div>
+                            <div class="mt-4">
+                                <button type="submit" class="btn btn-icon rounded-pill float-right">
+                                    <span class="btn-inner--text">Submit</span>
+                                    <span class="btn-inner--icon" v-if="!loading"><i class="fas fa-long-arrow-alt-right"></i></span>
+                                    <span class="btn-inner--icon" v-else><i class="fas fa-spinner fa-spin"></i></span>
+                                </button>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="mt-4">
-                        <button type="submit" class="btn btn-icon rounded-pill">
-                            <span class="btn-inner--text">Submit</span>
-                            <span class="btn-inner--icon" v-if="!loading"><i class="fas fa-long-arrow-alt-right"></i></span>
-                            <span class="btn-inner--icon" v-else><i class="fas fa-spinner fa-spin"></i></span>
-                        </button>
-                    </div>
-
-                </form>
+                </div>
             </div>
         </section>
+
+        <!-- <download-csv :data="userData" name="cogneasy_registeration.csv"> 
+            Download Data 
+        </download-csv> -->
     </div>
 </template>
 
@@ -321,12 +324,14 @@
                     how: '',
                     expectation: '',
                 },
+
+                userData:[]
             }
         },
 
         
         created(){
-            // this.goToPayment()
+            this.getData()
         },
 
         methods  : {
@@ -334,10 +339,8 @@
                 this.$swal({
                     title: '<strong>Proceed to Payment</strong>',
                     icon: 'info',
-                    // html: 'Proceed to make payment to complete your registration.',
                     html: 'You will have to pay an amount of <del>₦50,000</del> <b>₦15,500 </b> to complete registration.',
                     focusConfirm: false,
-                    // confirmButtonText: 'Pay Now',
                     confirmButtonText: '<a href="https://paystack.com/pay/Cogneasy" target="blank" style="color: white;">Pay Now</a>',
                     confirmButtonAriaLabel: 'Make payment now',
                 })
@@ -355,8 +358,19 @@
                         this.loading = false
                         console.log(err);
                     })
-            }
+            },
 
+            getData(){
+                db.collection('users') .get()
+                    .then(snapshot => {
+                        snapshot.forEach(doc => {
+                            let data = doc.data()
+                            data.id = doc.id;
+
+                            this.userData.push(data)
+                        })
+                    })
+            }
         }
     }
 
@@ -376,12 +390,6 @@
                 color: $white;
                 background: $primary;
                 border: none
-            }
-
-            &--price {
-                img {
-                    width: 20rem;
-                }
             }
         }
 
@@ -416,15 +424,24 @@
         }
 
         &__details {
-            .btn {
-                color: $white;
-                background: $primary;
+             &--price {
+                img {
+                    width: 20rem;
+                }
             }
 
-            .form-control {
-                &:focus {
-                    box-shadow: none;
-                    border: 1px solid $secondary;
+            &--form {
+
+                .btn {
+                    color: $white;
+                    background: $primary;
+                }
+
+                .form-control {
+                    &:focus {
+                        box-shadow: none;
+                        border: 1px solid $secondary;
+                    }
                 }
             }
         }
@@ -432,7 +449,7 @@
 
     @media screen and (max-width: 600px) {
         .home {
-            &__about {
+            &__details {
                 &--price {
                     
                     margin-top: 2rem;
