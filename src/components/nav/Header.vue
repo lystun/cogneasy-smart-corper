@@ -10,7 +10,7 @@
                     <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                         <li class="nav-item mr-0">
                             <a href="#register" class="btn btn-white rounded-pill d-lg-inline-flex">
-                                Register Now
+                                Reserve My Slot
                             </a>
                         </li>
                     </ul>
@@ -37,7 +37,8 @@
 
         .btn {
             color: $white;
-            background: $primary;
+            // background: $another;
+            background: $tertiary;
             border: none
         }
     }

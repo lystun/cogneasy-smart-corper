@@ -1,10 +1,12 @@
 <template>
     <div class="home">
         <section class="slice slice-lg pb-5 pb-lg-10 home__about">
-            <div class="container pt-4 pt-lg-9">
+            <div class="container pt-4 pt-lg-8">
                 <div class="row">
-                    <div class="col-lg-9 mx-aut">
-                        <h1 class="display-4 text-white lh-110">Cogneasy is helping Africans unlock solutions to challenges.</h1>
+                    <div class="col-lg-10 mx-aut">
+                        <h1 class="display-4 font-weight-bold text-white lh-110">
+                            The Mental Skill Learning Program That Will Unleash Your Mind And Make You The Best At What You Do.
+                        </h1>
                         <p class="lead text-white mt-4">
                             Cogneasy is helping Africans unlock solutions to challenges peculiar to Africans as well as the entire world by educating people through its carefully curated higher-order thinking skills such as Creative thinking, Critical thinking and Complex Problem-solving.
                         </p>
@@ -30,8 +32,8 @@
                         <div class="py-lg-5 text-lg-left">
                             <h3 class="mb-3 font-weight-bold">Learning Outcome</h3>
                             <p class="lead lh-180">In this course, you will be equipped with 3 of the most highly sought-after skills in the 21st Century:</p>
-                            <a href="#register" class="btn rounded-pill hover-translate-y-n3 mt-4">
-                                <span class="btn-inner--text">Register Now</span>
+                            <a href="#register" style="background: #ff0069"  class="btn rounded-pill hover-translate-y-n3 mt-4 px-5 py-3">
+                                <span class="btn-inner--text">Please, Get Me In</span>
                             </a>
                         </div>
                     </div>
@@ -94,29 +96,36 @@
             <div class="container position-relative zindex-100">
                 <div class="row">
                     <div class="col-12 text-center mb-4 mb-md-6">
-                        <h3 class="text-white">- Speaker's Profile -</h3>
+                        <h3 class="text-white">- Meet Our Faculty Lead -</h3>
                     </div>
-                    <!-- <div class="col-md-4 home__speaker--img text-center">
-                        <img src="./../assets/images/speaker-jd.png" class="img-flui" alt="">
-                    </div> -->
-                    <div class="col-md-12 mx-auto home__speaker--text">
-                        <img src="./../assets/images/speaker-jd.png" class="" alt="">
+                    <div class="col-md-4 home__speaker--img text-center">
+                        <img src="./../assets/images/speaker-jd.png" class="img-fluid" alt="">
+
+                        <blockquote class="lead text-white lh-180">
+                            <i>Whatever the field is, thinking forms the bedrock of all discoveries, breakthroughs, innovations and inventions that make those fields relevant” <br><br> - Jesudamilare Adesegun-David </i>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-8 mx-auto home__speaker--text">
+                        <!-- <img src="./../assets/images/speaker-jd.png" class="" alt=""> -->
 
                         <p class="lead text-white lh-180">
-                            Jesudamilare "JD" Adesegun-David is a co-founder of Ennovate Lab, a social enterprise promoting a Communities-as-Innovation-Hubs approach to positioning Africa for relevance in a global digital and knowledge economy. 
+                            In the last 9 years, I have challenged standing norms. Everybody said “No one has done it that way before”, but the skills of critical thinking, creativity and complex problem solving that I have mastered consistently proved that impossibility was nothing.
                         </p>
                         <p class="lead text-white lh-180">
-                            JD is a Thought Alchemist and a Transformation Strategist who is passionate about helping people, especially Africans, think well. Through Cogneasy, one of the startups under Ennovate Lab, he has been able to train more than 3000 people in the non-negotiable 21st century skills of critical and creative thinking for problem-solving.
+                            My work  as a mental skills coach is to make problem solving part of your daily life. My team and I have trained over three thousand (3000) professionals and students across Nigeria, the US and the UK over the past two years
+                        </p>
+
+                        <p class="lead text-white lh-180">
+                            I have facilitated workshops and seminars for educators across Nigeria on Google-sponsored platforms. I am a 2015 Global Teachers Institute Teach with Africa Fellow and a 2019 YNaija New Establishment List awardee.
                         </p>
                         <p class="lead text-white lh-180">
-                            In 2018, he was hosted by the Oyo State Government during the one-of-a-kind UNESCO-awarded Festival of Learning to equip educators and students with these mental skills. He founded and now sits on the advisory board of Children that Change the World (CTCTW), a non-profit that ensures students in underserved communities have access to life skills that place them on par with their global counterparts. 
+                            I am ready for you! This Learning program is flexible and will be delivered virtually and led 100% by the faculties. Wouldn’t you rather join me to get empowered as a solution provider in your field?
                         </p>
-                        <p class="lead text-white lh-180">
-                            Through its weekly radio programme which is broadcast in 3 languages (English, Yoruba and Hausa), children in the urban and rural parts of Ogbomoso are being equipped with creative and critical thinking skills. Also, CTCTW, in its effort to make innovation thinking the new normal in high schools, has organized the Ogbomoso Innovation Challenge for two years in a row, which is the first of its kind in the entire state.
-                        </p>
-                        <p class="lead text-white lh-180">
-                            He has facilitated workshops and seminars for educators across Nigeria on Google-sponsored platforms. He is a 2015 Global Teachers Institute Teach with Africa Fellow and a 2019 YNaija New Establishment List awardee.
-                        </p>
+                        
+                        <a href="#register" style="background: #ff0069"  class="btn rounded-pill hover-translate-y-n3 mt-4 px-5 py-3">
+                            <span class="text-white">Please, Get Me In</span>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -134,6 +143,67 @@
 
                     <div class="card-columns">
                         <div class="card hover-shadow-lg shadow">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <img alt="" src="./../assets/images/testimonials/abayomi_okekunle.png"  class="avatar rounded-circle">
+                                    </div>
+                                    <div class="pl-3">
+                                        <h5 class="h6 mb-0">Abayomi Okekunle</h5>
+                                        <small class="mb-0">Ambassador, International Model United Nations (IMUN).</small>
+                                    </div>
+                                </div>
+                                <p class="mt-4 lh-180">I can confidently say that through this training, I’ve begun to see life through different lenses and angles that an untrained mind can never conceive. And I strongly recommend this training to both young and old.</p>
+                            </div>
+                        </div>
+
+                        <div class="card hover-shadow-lg shadow">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <img alt="" src="./../assets/images/testimonials/bayo_komolafe.png"  class="avatar rounded-circle">
+                                    </div>
+                                    <div class="pl-3">
+                                        <h5 class="h6 mb-0">Adebayo Komolafe</h5>
+                                        <small class="mb-0">Growth Hacker at Ennovate Lab</small>
+                                    </div>
+                                </div>
+                                <p class="mt-4 lh-180">Through the cognitive skills training, I’ve been able to organize my daily tasks and follow it dutifully. </p>
+                            </div>
+                        </div>
+
+                        <div class="card hover-shadow-lg shadow">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <img alt="" src="./../assets/images/testimonials/fisola_praise.png"  class="avatar rounded-circle">
+                                    </div>
+                                    <div class="pl-3">
+                                        <h5 class="h6 mb-0">Oluwafisola Praise Ajayi</h5>
+                                        <small class="mb-0">Founder, Purfle</small>
+                                    </div>
+                                </div>
+                                <p class="mt-4 lh-180">I’ve been opened to see an intellectual part of me I never knew existed through just participating in this training. Now, I know anything is possible if only I can think and ask the right questions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card hover-shadow-lg shadow">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <img alt="" src="./../assets/images/testimonials/tolulope_adetunji.png"  class="avatar rounded-circle">
+                                    </div>
+                                    <div class="pl-3">
+                                        <h5 class="h6 mb-0">Tolulope Adetunji</h5>
+                                        <small class="mb-0">CEO, Wonder-Inspired Cakes</small>
+                                    </div>
+                                </div>
+                                <p class="mt-4 lh-180">Through this training, I’ve learnt and understood practical ways thought leaders think, and how their thought processes are formed. I can boldly say that I’ve transitioned from a “why?” person to a “why not?” person. </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="card hover-shadow-lg shadow">
                             <div class="card-body">
                                 <p class="mt-4 lh-180">
                                     I was made to know that our mind can chart the uncharted realm in solving problems.
@@ -208,10 +278,9 @@
                                     <h5 class="h6 mb-0">Tobi Agbeleye</h5>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -300,6 +369,8 @@
                 </div>
             </div>
         </section>
+
+        <a href="https://paystack.com/pay/Cogneasy">Go Now</a>
 
         <!-- <download-csv :data="userData" name="cogneasy_registeration.csv"> 
             Download Data 
@@ -413,6 +484,13 @@
         &__speaker {
             background: $primary;
 
+            &--img {
+                img {
+                    width: 230px;
+                    margin-bottom: 1rem;
+                }
+            }
+
             &--text {
                 img {
                     width: 200px;
@@ -462,6 +540,15 @@
             }
 
             &__speaker {
+
+                &--img {
+                    margin-bottom: 3rem;
+
+                    img {
+                        width: 200px;
+                        margin-bottom: 2rem;
+                    }
+                }
 
                 &--text {
                     text-align: center;
