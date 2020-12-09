@@ -370,8 +370,6 @@
             </div>
         </section>
 
-        <a href="https://paystack.com/pay/Cogneasy">Go Now</a>
-
         <!-- <download-csv :data="userData" name="cogneasy_registeration.csv"> 
             Download Data 
         </download-csv> -->
