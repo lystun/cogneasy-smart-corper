@@ -112,7 +112,7 @@
                             In the last 9 years, I have challenged standing norms. Everybody said “No one has done it that way before”, but the skills of critical thinking, creativity and complex problem solving that I have mastered consistently proved that impossibility was nothing.
                         </p>
                         <p class="lead text-white lh-180">
-                            My work  as a mental skills coach is to make problem solving part of your daily life. My team and I have trained over three thousand (3000) professionals and students across Nigeria, the US and the UK over the past two years
+                            My work  as a mental skills coach is to make problem solving part of your daily life. My team and I have trained over three thousand (3000) professionals and students across Nigeria, the US and the UK over the past two years.
                         </p>
 
                         <p class="lead text-white lh-180">
@@ -296,25 +296,35 @@
                 <div class="row">
                     <div class="col-md-3 home__details--price">
                         <img src="./../assets/images/price.png" class="img-fluid" alt="">
+
+                        <a href="https://paystack.com/pay/Cogneasy" target="blank" style="background: #ff0069"  class="btn rounded-pill hover-translate-y-n3 mt-3 px-5 py-3">
+                            <span class="text-white">Pay Directly</span>
+                        </a>
                     </div>
                     <div class="col-md-9 home__details--form">
                         <form @submit.prevent="saveData">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="form-control-label">First name</label>
-                                        <input class="form-control" required v-model="form.fname"  type="text" placeholder="Enter your first name">
+                                        <label class="form-control-label">Name</label>
+                                        <input class="form-control" required v-model="form.fname"  type="text" placeholder="Enter your name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
+                                        <label class="form-control-label">Email</label>
+                                        <input class="form-control" required v-model="form.email" type="email" placeholder="email@address.com">
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <div class="form-group">
                                         <label class="form-control-label">Last name</label>
                                         <input class="form-control" required v-model="form.lname" type="text" placeholder="Also your last name">
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                     
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-control-label">Email</label>
@@ -348,7 +358,7 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="row">
                                 <div class="col-12">
@@ -377,7 +387,6 @@
 </template>
 
 <script>
-
     import db from '@/firebase/init';
     
     export default {
@@ -501,8 +510,10 @@
 
         &__details {
              &--price {
+                text-align: center;
+
                 img {
-                    width: 20rem;
+                    width: 10rem;
                 }
             }
 
