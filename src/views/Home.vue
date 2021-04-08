@@ -119,7 +119,7 @@
                             I have facilitated workshops and seminars for educators across Nigeria on Google-sponsored platforms. I am a 2015 Global Teachers Institute Teach with Africa Fellow and a 2019 YNaija New Establishment List awardee.
                         </p>
                         <p class="lead text-white lh-180">
-                            I am ready for you! This Learning program is flexible and will be delivered virtually and led 100% by the faculties. Wouldn’t you rather join me to get empowered as a solution provider in your field?
+                            This Learning program is flexible and will be delivered virtually and led 100% by the faculties. Wouldn’t you rather join me to get empowered as a solution provider in your field?
                         </p>
                         
                         <a href="#register" style="background: #ff0069"  class="btn rounded-pill hover-translate-y-n3 mt-4 px-5 py-3">
@@ -380,9 +380,9 @@
             </div>
         </section>
 
-        <!-- <download-csv :data="userData" name="cogneasy_registeration.csv"> 
+        <download-csv :data="userData" name="cogneasy_registeration.csv"> 
             Download Data 
-        </download-csv> -->
+        </download-csv>
     </div>
 </template>
 
